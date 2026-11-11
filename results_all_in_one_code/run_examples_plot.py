@@ -356,4 +356,4 @@ if __name__ == "__main__":
         runs = previous
     with open(out_file, "wb") as f:
         pickle.dump(runs, f)
-    print(f"\nsaved {len(runs)} example runs -> {out_file}   (plot them with plot_examples.ipynb)")
+    print(f"\nsaved {len(runs)} example runs -> {out_file}   (plot them with notebooks/analysis/plot_examples_of_detections.ipynb)")
