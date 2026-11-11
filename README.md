@@ -93,6 +93,12 @@ recomputes the window bounds (`n_min`, paper Sec. V-B) and writes
 | Rolling mean | `uncertainty_our_results/uncertainties_TS.npy` | — |
 | Operational 4G / 5G (and trends) | `results_all_in_one_code/datasets/INFOCOM/` | Preparation notebook in that directory |
 
+The Friedman stream's generation notebook is adapted from the code of L. Baier,
+T. Schlör, J. Schöffer, N. Kühl, "Detecting Concept Drift With Neural Network
+Model Uncertainty," [arXiv:2107.01873](https://arxiv.org/abs/2107.01873)
+([source repository](https://github.com/anonymous-account-research/uncertainty-drift-detection)).
+The ADWIN baseline is adapted from the [river library](https://github.com/online-ml/river).
+
 The Operational streams are derived from
 [nds-group/ran-updates](https://github.com/nds-group/ran-updates). The raw
 `traffic_dataset.parquet` and `info_dataset.parquet` files are not included;
@@ -114,3 +120,8 @@ results_all_in_one_code/
   notebooks/                    analysis and data-preparation notebooks
   figures/                      generated figures
 ```
+
+## License
+
+The code is released under the MIT License (see [LICENSE](LICENSE)). Third-party
+code and its licenses are listed in [THIRD_PARTY_LICENSES.md](THIRD_PARTY_LICENSES.md).

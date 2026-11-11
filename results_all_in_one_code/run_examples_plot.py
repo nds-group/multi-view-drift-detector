@@ -1,17 +1,18 @@
 """
 Run example streams of each dataset through our detector (KALEIDO, the multi-instance
 KALEIDO detector) and through every benchmark (ADWIN, KSWIN, PH, CUSUM, EWMA, WinDrift++ l1 / l12)
-and SAVE the detections. No plotting here: the figure is made in plot_examples.ipynb from the
+and SAVE the detections. No plotting here: the figure is made in
+notebooks/analysis/plot_examples_of_detections.ipynb from the
 saved results.
 
 Put this file next to KALEIDO_multi_instance.py, Benchmarks.py, ADWIN_CLASS.py and run it
 from the project root (the data paths are the same relative paths used in those two scripts):
 
-    python run_examples.py                                  # the 5 datasets of the paper figure, stream 0 of each
-    python run_examples.py --datasets all                   # all 12 datasets, stream 0 of each
-    python run_examples.py --datasets all --ids 0 3 10      # streams 0, 3 and 10 of every dataset
-    python run_examples.py --datasets random_easy AR4_linear_1 --ids-per-dataset 3 0   # one given id per dataset
-    python run_examples.py --features normal_data+gradient+season
+    python run_examples_plot.py                                  # the 5 datasets of the paper figure, stream 0 of each
+    python run_examples_plot.py --datasets all                   # all 12 datasets, stream 0 of each
+    python run_examples_plot.py --datasets all --ids 0 3 10      # streams 0, 3 and 10 of every dataset
+    python run_examples_plot.py --datasets random_easy AR4_linear_1 --ids-per-dataset 3 0   # one given id per dataset
+    python run_examples_plot.py --features normal_data+gradient+season
 
 Outputs (in --out-dir, default results_all_in_one_code/example_runs):
   cache/<dataset>_id<k>_<detector>_<features>.pkl   one pickle per (dataset, stream, detector) -> reruns are skipped

@@ -761,9 +761,7 @@ if __name__ == "__main__":
         for item, data_stream in enumerate(data_streams):
 
             # rebuild detectors with this series' windows
-            window_size_filesave = (
-                f"window_ADWIN_buckets_Detector_{cut_detector}_abrupt_Nadia_new.txt"
-            )
+            window_size_filesave = False
             if cut_detector == "ADWIN":
                 detector = ADWIN(
                     delta=delta,

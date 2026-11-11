@@ -1,13 +1,12 @@
-colorednoise
+joblib
+jupyter
 matplotlib
 numba
 numpy
 pandas
-plotly
+pyarrow
 river
-scikit_learn
 scipy
 seaborn
 statsmodels
-tensorflow
 tqdm
