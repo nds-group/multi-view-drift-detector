@@ -36,7 +36,7 @@ Datasets and saved results are checked in; nothing needs to be downloaded.
 
 | Step | Command | Needed for |
 |---|---|---|
-| 1. KALEIDO (paper configuration) | `python results_all_in_one_code/KALEIDO_multi_instance.py --features "gradient+season"` | Fig. 8, 9 |
+| 1. KALEIDO (paper configuration) | `python results_all_in_one_code/KALEIDO_multi_instance.py --features "season+gradient"` | Fig. 8, 9 |
 | 2. Baselines | `python results_all_in_one_code/Benchmarks.py` | Fig. 7, 8, 9 |
 | 3. View-combination sweep | `python results_all_in_one_code/run_all_features.py` | Fig. 7 |
 | 4. Example detections | `python results_all_in_one_code/run_examples_plot.py --datasets all --ids 0` | Fig. 10 |
