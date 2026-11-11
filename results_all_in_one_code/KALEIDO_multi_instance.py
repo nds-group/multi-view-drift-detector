@@ -366,6 +366,7 @@ def classify_drift_points_infocom(transformation_results, labels, event_length):
                         )
                     TP_distances.append(i - idx_temp)
                     TP_distances_end.append(window_end - idx_temp)
+                else:
                     FP.append(i)
     if TP:
         # delete all FN
