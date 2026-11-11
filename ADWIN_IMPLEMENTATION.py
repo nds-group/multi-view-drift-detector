@@ -1,3 +1,9 @@
+# Adapted from the river library (https://github.com/online-ml/river),
+# with modifications by the KALEIDO authors.
+# Copyright (c) 2020, the river developers. All rights reserved.
+# Distributed under the BSD 3-Clause License; the full text is in
+# THIRD_PARTY_LICENSES.md at the repository root.
+
 import numpy as np
 from collections import deque
 from math import fabs, log, pow, sqrt
